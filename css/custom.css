@@ -151,3 +151,7 @@ i:hover{
 [data-theme='dark'] #web_bg:before, [data-theme='dark'] #footer:before, [data-theme='dark'] #page-header:before{
   background-color: rgb(0,0,0,0.3)!important;
 }
+
+[data-theme='dark']{
+  --scrollbar-color: #5DAC81
+}
