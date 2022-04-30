@@ -1338,7 +1338,7 @@ canvas:not(#ribbon-canvas),
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
-  --preloader-bg: #070809;
+  --preloader-bg: #000;
   --preloader-color: #fff;
   --tab-border-color: #f0f0f0;
   --tab-botton-bg: #f0f0f0;
@@ -8807,7 +8807,7 @@ blockquote.pullquote.right {
   --search-bg: #121212;
   --search-input-color: rgba(255,255,255,0.7);
   --search-result-title: rgba(255,255,255,0.9);
-  --preloader-bg: #cc4346;
+  --preloader-bg: #0d0d0d;
   --preloader-color: rgba(255,255,255,0.7);
   --tab-border-color: #2c2c2c;
   --tab-botton-bg: #2c2c2c;

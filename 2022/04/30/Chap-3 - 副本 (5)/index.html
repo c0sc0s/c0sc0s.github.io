@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>test | cos</title><meta name="author" content="cos,yuwenjieshuai@gmail.com"><meta name="copyright" content="cos"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="Chap-3 信息编码与数据表示 3.1 数值数据的表示 3.1.1 进位计数制  数制: 由两大要素组成基数 RRR 与各位数的权 WWW.  对于向量 x⃗&#x3D;(Dm−1,Dm−2,…,D0,D−1,…,D−k)\vec{x} &#x3D; (D_{m-1}, D_{m-2},\dots, D_0, D_{-1}, \dots, D_{-k})x&#x3D;(Dm−1​,Dm−2​,…,D0​,D−1​,…,D−k">
+<!DOCTYPE html><html class="hide-aside" lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>test | cos</title><meta name="author" content="cos,yuwenjieshuai@gmail.com"><meta name="copyright" content="cos"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="Chap-3 信息编码与数据表示 3.1 数值数据的表示 3.1.1 进位计数制  数制: 由两大要素组成基数 RRR 与各位数的权 WWW.  对于向量 x⃗&#x3D;(Dm−1,Dm−2,…,D0,D−1,…,D−k)\vec{x} &#x3D; (D_{m-1}, D_{m-2},\dots, D_0, D_{-1}, \dots, D_{-k})x&#x3D;(Dm−1​,Dm−2​,…,D0​,D−1​,…,D−k">
 <meta property="og:type" content="article">
 <meta property="og:title" content="test">
 <meta property="og:url" content="https://c0sc0s.github.io/2022/04/30/Chap-3%20-%20%E5%89%AF%E6%9C%AC%20(5)/index.html">
@@ -514,10 +514,11 @@ X &amp;, \ 0 \leq X \leq 1-2^{-n} \<br>
     document.body.style.overflow = '';
     document.getElementById('loading-box').classList.remove("loaded")
 
+    }
   }
-}
-window.addEventListener('load',preloader.endLoading())
-setTimeout(function(){preloader.endLoading();}, 5000);</script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css"><script>(() => {
+  window.addEventListener('load',()=> {preloader.endLoading()})
+  setTimeout(function(){preloader.endLoading();}, 5000);
+  document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})</script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css"><script>(() => {
   document.querySelectorAll('#article-container span.katex-display').forEach(item => {
     btf.wrap(item, 'div', { class: 'katex-wrap'})
   })

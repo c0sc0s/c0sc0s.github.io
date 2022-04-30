@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hello World | cos</title><meta name="author" content="cos,yuwenjieshuai@gmail.com"><meta name="copyright" content="cos"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<!DOCTYPE html><html class="hide-aside" lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hello World | cos</title><meta name="author" content="cos,yuwenjieshuai@gmail.com"><meta name="copyright" content="cos"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="https://c0sc0s.github.io/2022/04/29/hello-world/index.html">
@@ -164,10 +164,11 @@
     document.body.style.overflow = '';
     document.getElementById('loading-box').classList.remove("loaded")
 
+    }
   }
-}
-window.addEventListener('load',preloader.endLoading())
-setTimeout(function(){preloader.endLoading();}, 5000);</script><div class="js-pjax"><script>function loadLivere () {
+  window.addEventListener('load',()=> {preloader.endLoading()})
+  setTimeout(function(){preloader.endLoading();}, 5000);
+  document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>function loadLivere () {
   if (typeof LivereTower === 'object') {
     window.LivereTower.init()
   }
