@@ -1,4 +1,4 @@
-/* 字体修改： */
+/* ==============================字体修改：================================= */
 
 @font-face{
   font-family:'Candyhome' ;  /* 字体名自定义即可 */
@@ -31,7 +31,8 @@
 }
 
 
-/* 透明 */
+
+/* ==============================毛玻璃透明效果========================= */
 
 /* 首页文章卡片 */
 #recent-posts > .recent-post-item{
@@ -39,7 +40,7 @@
 }
 /* 首页侧栏卡片 */
 .card-widget{
-background:rgba(12, 10, 10, 0.124)!important;
+background:rgba(12, 10, 10, 0.9)!important;
 }
 /* 页脚 */
 #pagination .page-number.current {
@@ -66,7 +67,10 @@ background: rgba(255, 255, 255, 0.9);
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* 鼠标样式 */
+
+
+
+/* ====================鼠标样式=========================== */
 /* 全局默认鼠标指针 */
 body,
 html{
@@ -105,7 +109,8 @@ i:hover{
       cursor: url('./cur_font/Hand.cur'),auto;
 }
 
-/* 图片模糊处理 */
+
+/*======================== 图片模糊处理 ===========================*/
 #page-header,
 #web_bg {
     -webkit-animation: imgblur 1.5s 1 ease-in-out;
@@ -127,5 +132,11 @@ i:hover{
   100% {
     -webkit-filter: blur(0px);
   }
+}
+
+
+/* ============================menu 居中============================ */
+#navFn{
+  flex: 1;
 }
 
