@@ -167,15 +167,15 @@ div#archive{
   --pseudo-hover: #4afca9a1;
 }
 
-.recent-post-item .article-content::before{
+/* .recent-post-item .article-content::before{
+  display: none;
+} */
+
+/* .recent-post-item .recent-post-content.left::before{
   display: none!important;
 }
-
-.recent-post-item .recent-post-content.left::before{
-  display: none!important;
-}
-
-
+ */
+/* 
 .recent-posts .recent-post-item .article-content{
   background: #99999a42!important;
-}
+} */
