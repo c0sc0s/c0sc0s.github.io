@@ -2543,68 +2543,6 @@ figure.highlight pre .javascript .function {
     overflow: hidden;
     border: 0px solid;
   }
-  .recent-post-item .recent-post-content::before {
-    content: "";
-    width: 0;
-    height: 0;
-    background: transparent;
-    position: absolute;
-    z-index: 3;
-    top: calc(50% - 10px);
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    -webkit-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
-    -moz-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
-    -o-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
-    -ms-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
-    transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
-  }
-  .recent-post-item .recent-post-content.both,
-  .recent-post-item .recent-post-content.right {
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    -o-box-orient: horizontal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    left: calc(-23.07% - 41px);
-    -webkit-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
-    -moz-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
-    -o-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
-    -ms-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
-    transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
-  }
-  .recent-post-item .recent-post-content.both::before,
-  .recent-post-item .recent-post-content.right::before {
-    left: calc(23.07% + 40px);
-    border-left: 6px solid var(--recent-post-triangle);
-  }
-  .recent-post-item .recent-post-content.both .recent-post-info::before,
-  .recent-post-item .recent-post-content.right .recent-post-info::before {
-    background: -webkit-linear-gradient(left, var(--recent-post-cover-shadow), transparent);
-    background: -moz-linear-gradient(left, var(--recent-post-cover-shadow), transparent);
-    background: -o-linear-gradient(left, var(--recent-post-cover-shadow), transparent);
-    background: -ms-linear-gradient(left, var(--recent-post-cover-shadow), transparent);
-    background: linear-gradient(to right, var(--recent-post-cover-shadow), transparent);
-    left: calc(100% - 1px);
-  }
-  .recent-post-item .recent-post-content.both .article-content::before,
-  .recent-post-item .recent-post-content.right .article-content::before {
-    right: -59px;
-    border-left: 60px solid var(--article-content-bgcolor);
-  }
-  .recent-post-item .recent-post-content.both .article-content-text,
-  .recent-post-item .recent-post-content.right .article-content-text {
-    margin: 20px 20px 20px 0px;
-  }
-  .recent-post-item .recent-post-content.both .article-title,
-  .recent-post-item .recent-post-content.right .article-title {
-    padding: 0px 30px 0px 70px;
-  }
-  .recent-post-item .recent-post-content.both .recent-post-meta,
-  .recent-post-item .recent-post-content.right .recent-post-meta {
-    padding: 0px 20px 0px 70px;
-  }
   .recent-post-item .recent-post-content.left {
     -webkit-box-direction: reverse;
     -moz-box-direction: reverse;
@@ -2621,22 +2559,6 @@ figure.highlight pre .javascript .function {
     -o-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
     -ms-transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
     transition: all 0.5s cubic-bezier(0.59, 0.01, 0.48, 1.17);
-  }
-  .recent-post-item .recent-post-content.left::before {
-    right: calc(23.07% + 40px);
-    border-right: 6px solid var(--recent-post-triangle);
-  }
-  .recent-post-item .recent-post-content.left .recent-post-info::before {
-    background: -webkit-linear-gradient(right, var(--recent-post-cover-shadow), transparent);
-    background: -moz-linear-gradient(right, var(--recent-post-cover-shadow), transparent);
-    background: -o-linear-gradient(right, var(--recent-post-cover-shadow), transparent);
-    background: -ms-linear-gradient(right, var(--recent-post-cover-shadow), transparent);
-    background: linear-gradient(to left, var(--recent-post-cover-shadow), transparent);
-    right: calc(100% - 1px);
-  }
-  .recent-post-item .recent-post-content.left .article-content::before {
-    left: -59px;
-    border-right: 60px solid var(--article-content-bgcolor);
   }
   .recent-post-item .recent-post-content.left .article-content-text {
     margin: 20px 0px 20px 20px;
