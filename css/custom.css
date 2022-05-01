@@ -158,3 +158,24 @@ i:hover{
   --pagenumber-hover-color: rgba(0,0,0,0.2);
   --pagenumber-current-shadow-color: #261818;
 }
+
+div#archive{
+  background: rgb(255 255 255 / 0%)!important;
+}
+
+:root{
+  --pseudo-hover: #4afca9a1;
+}
+
+.recent-post-item .article-content::before{
+  display: none!important;
+}
+
+.recent-post-item .recent-post-content.left::before{
+  display: none!important;
+}
+
+
+.recent-posts .recent-post-item .article-content{
+  background: #99999a42!important;
+}
