@@ -153,5 +153,8 @@ i:hover{
 }
 
 [data-theme='dark']{
-  --scrollbar-color: #5DAC81
+  --scrollbar-color: #5DAC81;
+  --recent-post-triangle: rgba(0,0,0,0.3)!important;
+  --pagenumber-hover-color: rgba(0,0,0,0.2);
+  --pagenumber-current-shadow-color: #261818;
 }
