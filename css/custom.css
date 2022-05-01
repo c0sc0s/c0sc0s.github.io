@@ -157,6 +157,8 @@ i:hover{
   --recent-post-triangle: rgba(0,0,0,0.3)!important;
   --pagenumber-hover-color: rgba(0,0,0,0.2);
   --pagenumber-current-shadow-color: #261818;
+  --card-bg: #00000059;
+  --font-color: rgb(255 255 255);
 }
 
 div#archive{
@@ -167,15 +169,16 @@ div#archive{
   --pseudo-hover: #4afca9a1;
 }
 
-/* .recent-post-item .article-content::before{
-  display: none;
-} */
 
-/* .recent-post-item .recent-post-content.left::before{
-  display: none!important;
-}
- */
-/* 
 .recent-posts .recent-post-item .article-content{
   background: #99999a42!important;
-} */
+}
+
+div#tag {
+  background: rgb(255 255 255 / 0%);
+}
+
+#aside-content #card-toc .toc-content .toc-link.active {
+    background: #68b34052;
+    color: #fff;
+}
