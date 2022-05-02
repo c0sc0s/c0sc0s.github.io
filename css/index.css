@@ -209,7 +209,6 @@ template {
   -webkit-box-orient: vertical;
 }
 .fontawesomeIcon,
-hr:before,
 #article-container h1:before,
 #article-container h2:before,
 #article-container h3:before,
@@ -1347,7 +1346,7 @@ canvas:not(#ribbon-canvas),
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
-  --btn-hover-color: #ff7242;
+  --btn-hover-color: #5dac81;
   --btn-color: #fff;
   --btn-bg: #979998;
   --text-bg-hover: rgba(151,153,152,0.7);
@@ -1361,7 +1360,7 @@ canvas:not(#ribbon-canvas),
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
-  --pseudo-hover: #ff7242;
+  --pseudo-hover: #5dac81;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #0089a7;
 }
@@ -1433,25 +1432,6 @@ hr {
   position: relative;
   margin: 40px auto;
   border: 2px dashed var(--hr-border);
-  width: calc(100% - 4px);
-}
-hr:hover:before {
-  left: calc(95% - 20px);
-}
-hr:before {
-  position: absolute;
-  top: -10px;
-  left: 5%;
-  z-index: 1;
-  color: var(--hr-before-color);
-  content: '\f0c4';
-  font-size: 20px;
-  line-height: 1;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 .table-wrap {
   overflow-x: scroll;
@@ -2502,11 +2482,6 @@ h1.page-title + .tag-cloud-list {
   overflow: hidden;
   margin-top: 20px;
   padding: 20px 24px;
-}
-@media screen and (max-width: 768px) {
-  #aside-content .card-widget:not(#card-toc) {
-    display: none;
-  }
 }
 #aside-content .card-info .author-info__name {
   font-weight: 500;
@@ -4654,7 +4629,7 @@ div#runtime {
 #waline-wrap {
   --waline-font-size: 1.1em;
   --waline-theme-color: #979998;
-  --waline-active-color: #ff7242;
+  --waline-active-color: #5dac81;
 }
 #waline-wrap .vuser {
   -webkit-transition: all 0.5s;
@@ -5985,6 +5960,226 @@ blockquote.pullquote.right {
 .read-mode #article-container .note .note-icon {
   color: var(--font-color);
 }
+/* ==============================字体修改：================================= */
+
+@font-face{
+  font-family:'Candyhome' ;  /* 字体名自定义即可 */
+  src:url('../fonts/candy.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+@font-face{
+  font-family:'Cake' ;  /* 字体名自定义即可 */
+  src:url('../fonts/Cake.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+@font-face{
+  font-family:'YaHoo' ;  /* 字体名自定义即可 */
+  src:url('../fonts/YaHoo.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+#site-title{
+  font-family: 'YaHoo',sans-serif;
+}
+
+#subtitle{
+  font-family: 'Cake', sans-serif;
+}
+
+*{
+  font-family: 'Candyhome', sans-serif;
+}
+
+
+
+/* ==============================毛玻璃透明效果========================= */
+
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item{
+  background: linear-gradient(to left,rgb(00,00,00,.5), rgba(189, 180, 182, 0.5));  /*rgba*/
+}
+/* 首页侧栏卡片 */
+/* .card-widget{
+background:rgba(204, 199, 199, 0.5)!important;
+} */
+/* 页脚 */
+#pagination .page-number.current {
+  background: rgba(255, 255, 255, 0.2);
+}
+/* 分页页面 */
+div#page{
+  background: linear-gradient(#4CA1AF,#C4E0E5,0.3);
+}
+/* 归档页面 */
+div#archive{
+background: rgba(255, 255, 255, 0.9);
+}
+/* 标签页面 */
+div#tag{
+background: rgba(255, 255, 255, 0.8);
+}
+/* 分类页面 */
+div#category{
+background: rgba(255, 255, 255, 0.9);
+}
+
+#footer{
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+
+
+/* ====================鼠标样式=========================== */
+/* 全局默认鼠标指针 */
+body,
+html{
+  cursor: url('./cur_font/Arrow.cur'),auto !important;
+}
+/* 悬停图片时的鼠标指针 */
+img{
+  cursor: url('./cur_font/Hand.cur'),auto !important;
+}
+/* 选择链接标签时的鼠标指针 */
+a:hover{
+    cursor: url('./cur_font/Arrow2.cur'),auto;
+}
+/* 选中输入框时的鼠标指针 */
+input:hover{
+    cursor: url('./cur_font/Handwriting.cur'),auto;
+}
+/* 悬停按钮时的鼠标指针 */
+button:hover{
+    cursor: url('./cur_font/Hand.cur'),auto;
+}
+/* 悬停列表标签时的鼠标指针 */
+i:hover{
+    cursor: url('./cur_font/Hand.cur'),auto;
+}
+/* 悬停页脚链接标签（例如页脚徽标）时的鼠标指针 */
+#footer-wrap a:hover{
+      cursor: url('./cur_font/Hand.cur'),auto;
+}
+/* 悬停页码时的鼠标指针 */
+#pagination .page-number:hover{
+      cursor: url('./cur_font/Hand2.cur'),auto;
+}
+/* 悬停菜单栏时的鼠标指针 */
+#nav .site-page:hover{
+      cursor: url('./cur_font/Hand.cur'),auto;
+}
+
+
+/*======================== 图片模糊处理 ===========================*/
+#page-header,
+#web_bg {
+    -webkit-animation: imgblur 1.5s 1 ease-in-out;
+    animation: imgblur 1.5s 1 ease-in-out;
+}
+@keyframes imgblur {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+/*适配使用-webkit内核的浏览器 */
+@-webkit-keyframes imgblur {
+  0% {
+    -webkit-filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+
+
+/* ============================menu 居中============================ */
+#navFn{
+  flex: 1;
+}
+
+
+/* =============================暗色模式锁定========================= */
+#darkmode{
+  display: none!important;
+  visibility: hidden;
+  opacity: 0;
+}
+ 
+[data-theme='dark'] #web_bg:before, [data-theme='dark'] #footer:before, [data-theme='dark'] #page-header:before{
+  background-color: rgb(0,0,0,0.3)!important;
+}
+
+[data-theme='dark']{
+  --scrollbar-color: #5DAC81;
+  --recent-post-triangle: rgba(0,0,0,0.3)!important;
+  --pagenumber-hover-color: rgba(0,0,0,0.2);
+  --pagenumber-current-shadow-color: #261818;
+  --card-bg: #443f3f59!important;
+  --font-color: rgb(255 255 255);
+}
+
+div#archive{
+  background: rgb(255 255 255 / 0%)!important;
+}
+
+:root{
+  --pseudo-hover: #4afca9a1;
+}
+
+
+.recent-posts .recent-post-item .article-content{
+  background: #443f3f59!important;
+}
+
+div#tag {
+  background: rgb(255 255 255 / 0%);
+}
+
+#aside-content #card-toc .toc-content .toc-link.active {
+    background: #68b34052;
+    color: #fff;
+}
+
+
+
+/* bb */
+div.timenode .body {
+  background: #1c181800!important;
+}
+
+/* toggle */
+.toggle{
+  border: 1px solid #10101000;
+}
+
+.toggle > .toggle-button{
+  border-radius: 10px;
+  background: #5dac81cc;
+  color: #ffffff;
+}
+
+.avatar-img img:hover{
+  transform: none!important;
+}
+
+div#category {
+  background: rgb(255 255 255 / 5%);
+}
+
+div.timenode .meta:before{
+  background: rgb(68 215 182 / 0%)!important;
+}
+
+div.timenode .meta:after{
+  background: rgb(68 215 182 / 0%)!important;
+}
+
+
 div.timenode {
   position: relative;
 }
