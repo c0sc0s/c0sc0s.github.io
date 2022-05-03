@@ -217,3 +217,14 @@ div.timenode .meta:after{
   background: rgb(68 215 182 / 0%)!important;
 }
 
+:root {
+  --global-font-size: 17px;
+}
+
+p{
+  text-indent: 2em; 
+}
+
+button#readmode{
+  display: none;
+}
