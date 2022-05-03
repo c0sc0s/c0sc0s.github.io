@@ -225,6 +225,6 @@ p{
   text-indent: 2em; 
 }
 
-button#readmode{
-  display: none;
+#readmode{
+  display: none!important;
 }
